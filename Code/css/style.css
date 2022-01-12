@@ -1,0 +1,239 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+
+
+/* Entête de la page */ 
+
+/* Positionnement */
+#menu {
+    display : flex;
+    justify-content: space-between;
+    width: 60%; /*On peut également faire "margin-left : 20% + margin-right : 20%*/
+    margin : auto;
+    /*on aurait pu faire padding-top + padding bot*/
+    padding : 20px 0 20px 0; /* padding : haut droite bas gauche */
+}
+
+/* Logo */
+.Logo {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.Logo span {
+    color: #ff9900;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #999999;
+    font-weight: bold;    
+}
+
+header nav ul li a:hover {
+    color : #4a4a4b;
+    transition: color 3s;
+}
+
+
+/* Slogan */
+
+/* Positionnement */
+header section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa ;
+    width : 60%;
+    margin : auto;
+}
+
+header section div {
+    margin-top: 180px;
+}
+
+/* Titre */
+header section div h1 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+/* Paragraphe */
+header section div p {
+    font-size: 1.2rem;
+    color: #999999;
+    margin-top : -50px
+}
+
+/* Image */
+header section img {
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+
+/* Corps principal de la page */
+
+/* Centre de la page */
+
+/*Positionnement */
+main .center {
+    text-align: center;
+    margin-right: 730px;
+    margin-left: 730px;
+    margin-top : 80px
+}
+
+/* Titre */
+main .center h1 {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+/* Paragraphe */
+main .center p {
+    color: #999999;
+    margin-top: -20px;
+}
+
+
+
+
+
+
+
+
+
+/* Bas de page */
+
+/* Positionnement */
+main .bottom {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top : 100px
+}
+
+main .bottom article {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap : 50px ;
+}
+
+/*Généralité Début*/
+
+/* Titres */
+main .bottom div h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraphes */
+main .bottom div p {
+    color: #999999;
+    margin-bottom : 40px;
+}
+
+/* Boutons */
+main .bottom div a {
+    font-size: 1.1rem;
+    background-color: #a2c0be;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold ;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+main .bottom div a:hover {
+    background-color: black;
+    transition: background-color 3s;
+}
+
+/* Images */
+main .bottom article img {
+    width: 500px;
+    box-shadow: 10px 10px 0px 0px #a2c0be;
+}
+
+/*Généralité fin*/
+
+/*Articles positionnement*/
+main .bottom .Love,
+main .bottom .Fearsome,
+main .bottom .Beautiful {
+    display: flex;
+    margin-top : 70px
+}
+/*Centrage + espacement du texte par rapport à l'image */
+/*Article 1*/
+main .bottom .Love div {
+    text-align : right;
+    margin-top: 50px;
+    margin-right: 170px;
+}
+/*Article 2*/
+main .bottom .Fearsome div {
+    text-align : left;
+    margin-top: 50px;
+    margin-left: 170px;
+}
+/*Article 3*/
+main .bottom .Beautiful div {
+    text-align : right;
+    margin-top: 50px;
+    margin-right: 170px;
+}
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    background-color: #4a4a4b;
+    border: 1px solid #4a4a4b;
+    height: 200px;
+    color: white;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
