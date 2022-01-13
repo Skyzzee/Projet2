@@ -40,12 +40,13 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: #999999;
-    font-weight: bold;    
+    font-weight: bold;
+    transition: color 500ms;    
 }
 
 header nav ul li a:hover {
     color : #4a4a4b;
-    transition: color 3s;
+    transition: color 500ms;
 }
 
 
@@ -161,11 +162,13 @@ main .bottom div a {
     font-weight: bold ;
     border-radius: 30px;
     padding : 15px 40px;
+    transition: background-color 1s;
 }
 
 main .bottom div a:hover {
     background-color: black;
-    transition: background-color 3s;
+    transition: background-color 1s; /* on peut utiliser des "ms" */
+
 }
 
 /* Images */
