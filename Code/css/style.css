@@ -1,3 +1,17 @@
+:root {
+    /* une variable doit toujours commencer par 2 tirets */
+    --blanc : white;
+    --noir : black;
+    --gris_clair : #f8f9fa;
+    --gris : #999999;
+    --gris_foncé : #4a4a4b;
+    --orange : #ff9900;
+    --vert : #a2c0be;
+    --vert_foncé : #567876;
+} 
+
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -22,12 +36,12 @@ body {
 /* Logo */
 .Logo {
     text-decoration: none;
-    color: black;
+    color: var(--noir); /* var, sert a rappeler la variable qu'on a au debut */
     font-size: 2rem;
 }
 
 .Logo span {
-    color: #ff9900;
+    color: var(--orange);
 }
 
 /* Navigation */
@@ -39,13 +53,13 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #999999;
+    color: var(--gris);
     font-weight: bold;
     transition: color 500ms;    
 }
 
 header nav ul li a:hover {
-    color : #4a4a4b;
+    color : var(--gris_foncé);
     transition: color 500ms;
 }
 
@@ -54,7 +68,7 @@ header nav ul li a:hover {
 
 /* Couleur de fond de l'entête */
 header {
-    background-color: #f8f8f8;
+    background-color: var(--gris_clair);
 }
 
 /* Positionnement */
@@ -77,7 +91,7 @@ header section div h1 {
 header section div p {
     font-size: 1.3rem;
     font-weight: lighter;
-    color: #999999;
+    color: var(--gris);
     margin: 0;
 }
 
@@ -112,7 +126,7 @@ main .center h1 {
 
 /* Paragraphe */
 main .center p {
-    color: #999999;
+    color: var(--gris);
     margin : 0;
     font-weight: lighter;
 }
@@ -148,7 +162,7 @@ main .bottom div h2 {
 
 /* Paragraphes */
 main .bottom div p {
-    color: #999999;
+    color: var(--gris);
     margin-bottom : 40px;
     font-weight: lighter;
 }
@@ -156,8 +170,8 @@ main .bottom div p {
 /* Boutons */
 main .bottom div a {
     font-size: 1.1rem;
-    background-color: #a2c0be;
-    color: #ffffff;
+    background-color: var(--vert);
+    color: var(--blanc);
     text-decoration: none;
     font-weight: bold ;
     border-radius: 30px;
@@ -166,7 +180,7 @@ main .bottom div a {
 }
 
 main .bottom div a:hover {
-    background-color: black;
+    background-color: var(--noir);
     transition: background-color 1s; /* on peut utiliser des "ms" */
 
 }
@@ -175,7 +189,7 @@ main .bottom div a:hover {
 main .bottom article img {
     width: 43%;
     margin: auto;
-    box-shadow: 10px 10px 0px 0px #a2c0be;
+    box-shadow: 10px 10px 0px 0px var(--vert);
     /* décalage Axe X (droite), Axe Y (bas), flou Axe X (droite), flou Axe Y (bas), couleur de l'ombre */
 }
 
@@ -215,10 +229,10 @@ main .bottom .Fearsome div {
 footer {
     text-align: center;
     margin-top: 100px;
-    background-color: #4a4a4b;
-    border: 1px solid #4a4a4b;
+    background-color: var(--gris_foncé);
+    border: 1px solid var(--gris_foncé);
     height: 200px;
-    color: white;
+    color: var(--blanc);
 }
 
 footer p {
