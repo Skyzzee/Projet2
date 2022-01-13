@@ -99,9 +99,7 @@ header section img {
 /*Positionnement */
 main .center {
     text-align: center;
-    margin-right: 730px;
-    margin-left: 730px;
-    margin-top : 80px
+    margin: 80px 730px 0px 730px;
 }
 
 /* Titre */
