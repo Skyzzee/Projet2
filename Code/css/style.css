@@ -51,37 +51,39 @@ header nav ul li a:hover {
 
 /* Slogan */
 
+/* Couleur de fond de l'entête */
+header {
+    background-color: #f8f8f8;
+}
+
 /* Positionnement */
 header section {
     display: flex;
     justify-content: space-between;
-    background-color: #f8f9fa ;
     width : 60%;
     margin : auto;
-}
-
-header section div {
-    margin-top: 180px;
+    align-items: center;
 }
 
 /* Titre */
 header section div h1 {
     font-size: 4rem;
-    font-weight: normal;
+    font-weight: lighter;
+    margin : 0; /* Suppression des marges auto sur la balise heading */
 }
 
 /* Paragraphe */
 header section div p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
     color: #999999;
-    margin-top : -50px
+    margin: 0;
 }
 
 /* Image */
 header section img {
-    width: 400px;
+    width: 30%;
 }
-
 
 
 
