@@ -99,25 +99,29 @@ header section img {
 /*Positionnement */
 main .center {
     text-align: center;
-    margin: 5% 37% 0px 37%;
-}
+    margin: 5% 37% 5% 37%; /* On peut faire "width : 30%" + "margin : auto" */
+} /* pour la hauteur, on aurait pu utiliser "margin: 60px auto" et "60px" -> haut et bas / "auto" -> droite et gauche */
 
 /* Titre */
 main .center h1 {
     font-size: 2.1rem;
     font-weight: bold;
+    margin : 0;
 }
 
 /* Paragraphe */
 main .center p {
     color: #999999;
-    margin-top: -20px;
+    margin : 0;
+    font-weight: lighter;
 }
 
 
 
 
-
+/* 
+"justify-content : space-between" Axe principal (horizontal)
+"align-items : center" Axe vertical
 
 
 
@@ -125,30 +129,27 @@ main .center p {
 /* Bas de page */
 
 /* Positionnement */
-main .bottom {
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top : 100px
-}
-
-main .bottom article {
+main .bottom { 
+    margin : 0 20% ;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    gap : 50px ;
+    gap : 10px ;
 }
 
 /*Généralité Début*/
 
 /* Titres */
-main .bottom div h1 {
+main .bottom div h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    font-weight: lighter;
 }
 
 /* Paragraphes */
 main .bottom div p {
     color: #999999;
     margin-bottom : 40px;
+    font-weight: lighter;
 }
 
 /* Boutons */
@@ -159,10 +160,7 @@ main .bottom div a {
     text-decoration: none;
     font-weight: bold ;
     border-radius: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding : 15px 40px;
 }
 
 main .bottom div a:hover {
@@ -172,8 +170,10 @@ main .bottom div a:hover {
 
 /* Images */
 main .bottom article img {
-    width: 500px;
+    width: 43%;
+    margin: auto;
     box-shadow: 10px 10px 0px 0px #a2c0be;
+    /* décalage Axe X (droite), Axe Y (bas), flou Axe X (droite), flou Axe Y (bas), couleur de l'ombre */
 }
 
 /*Généralité fin*/
@@ -186,23 +186,17 @@ main .bottom .Beautiful {
     margin-top : 70px
 }
 /*Centrage + espacement du texte par rapport à l'image */
-/*Article 1*/
-main .bottom .Love div {
+/*Article 1 et 3*/
+main .bottom .Love div,
+main .bottom .Beautiful div {
     text-align : right;
-    margin-top: 50px;
-    margin-right: 170px;
+    margin : 50px 170px 0 0  ;
 }
+
 /*Article 2*/
 main .bottom .Fearsome div {
     text-align : left;
-    margin-top: 50px;
-    margin-left: 170px;
-}
-/*Article 3*/
-main .bottom .Beautiful div {
-    text-align : right;
-    margin-top: 50px;
-    margin-right: 170px;
+    margin : 50px 0 0 170px ;
 }
 
 
